@@ -1,0 +1,46 @@
+.clear{
+	clear: both;
+}
+.bhk-content-coin *{
+	margin: 0px;
+	padding: 0px;
+	font-size: 14px;
+	color: #333;
+	font-family: 'Arial';
+}
+.bhk-content-coin table {
+    width: 100%;
+    background: #f1f1f1;
+    border: 1px solid #ededed;
+    font-family: Arial;
+}
+.bhk-content-coin table thead{
+	background: #ededed;
+}
+.bhk-content-coin table thead tr th{
+	padding: 5px 10px;
+    text-align: center;
+    border: 1px solid #c78422;
+    background: #ef9715;
+    color: #fff;
+}
+
+.bhk-content-coin table tbody tr td{
+	padding: 10px;
+	border: 1px solid #b9b3b3; 
+}
+.bhk-content-coin table tbody tr td img{
+	margin-right: 10px; 
+}
+
+.bhk-content-coin table tbody tr td span{
+    display: inline-block;
+    font-size: 19px;
+    color: #02c302;
+    line-height: 19px;
+    font-weight: 800;
+}
+.bhk-content-coin table tbody tr td p{
+	display: inline-block;
+	min-width: 40px;
+}
