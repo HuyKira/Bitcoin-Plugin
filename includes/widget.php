@@ -14,7 +14,7 @@ class BHK_plugin_widget extends WP_Widget {
   		echo $before_widget; 
   		echo $before_title.$title.$after_title;
   		$urlapi = 'https://api.coinmarketcap.com/v1/ticker/?limit='.$num;
-  		$data = json_decode(file_get_contents($urlapi, true)); ?>
+  		$data = json_decode(file_get_contents($urlapi, true)); if($data){ ?>
 		<div class="bhk-content-coin">
 			<table class="bhk-table-coin">
 				<thead>
@@ -32,7 +32,7 @@ class BHK_plugin_widget extends WP_Widget {
 						<td><img src="https://files.coinmarketcap.com/static/img/coins/16x16/<?php echo $value->id; ?>.png" alt=""><?php echo $value->name; ?></td>
 						<td><?php echo $value->price_usd; ?>$ </td>
 						<td>
-							<p><?php echo $value->percent_change_24h; ?></p>
+							<p><?php echo $value->percent_change_24h; ?>%</p>
 							<?php if($value->percent_change_24h > 0){ echo '<span>&uarr;</span>'; } else {echo '<span style="color: Red">&darr;</span>';} ?>
 							<div class="clear"></div>	
 						</td>
@@ -41,7 +41,7 @@ class BHK_plugin_widget extends WP_Widget {
 				</tbody>
 			</table>
 		</div>
-		<?php echo $after_widget;
+		<?php } echo $after_widget;
   	} 
     function update($new_instance, $old_instance) {
       	$instance['title'] 	= strip_tags($new_instance['title']);

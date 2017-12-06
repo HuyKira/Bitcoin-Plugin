@@ -4,7 +4,7 @@
 .bhk-content-coin *{
 	margin: 0px;
 	padding: 0px;
-	font-size: 14px;
+	font-size: 13px;
 	color: #333;
 	font-family: 'Arial';
 }
@@ -42,5 +42,5 @@
 }
 .bhk-content-coin table tbody tr td p{
 	display: inline-block;
-	min-width: 40px;
+	min-width: 50px;
 }
