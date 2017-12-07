@@ -1,7 +1,7 @@
 <?php
 /*
-Plugin Name: Top Coin Plugin
-Plugin URI: https://huykira.net/webmaster/wordpress/plugin-lay-tin-tu-dong-tu-vnexpress-net.html
+Plugin Name: Top Coin
+Plugin URI: https://huykira.net/share-code/share-plugin-bang-gia-tien-ao.html
 Description: Top Coin Plugin by Huy Kira
 Author: Huy Kira
 Version: 1.0
